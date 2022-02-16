@@ -2,6 +2,7 @@ import React, { lazy, Suspense } from 'react';
 import { Route, Switch, useLocation } from 'react-router-dom';
 import { ROUTES } from './configs/routes';
 import ProtectedRoute from './modules/common/components/ProtectedRoute';
+import ListItem from './modules/listItem/pages/ListItem';
 
 const HomePage = lazy(() => import('./modules/home/pages/HomePage'));
 const ContactPage = lazy(() => import('./modules/home/pages/ContactPage'));
@@ -22,6 +23,8 @@ export const Routes = (props: Props) => {
 
         <Route path="/" exact component={LoginPage} />
         <Route exact path={ROUTES.signup} component={SignupPage} />
+
+        <Route path="/list" exact component={ListItem} />
       </Switch>
     </Suspense>
   );

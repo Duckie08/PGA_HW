@@ -1,0 +1,18 @@
+.item {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+}
+
+.item-container {
+  padding: 5px;
+}
+
+.list-item {
+  width: 50vw;
+}
+
+.button-lists {
+  display: flex;
+  justify-content: flex-end;
+}
